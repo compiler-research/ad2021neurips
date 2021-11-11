@@ -2,7 +2,7 @@
   - Setup llvm and clad
 
   - Setup Tapenade
-    - Make the ad function for our gaussian function (details to be added)
+    - Make the ad function for our gaussian function (details to be added). I have added the result to ngaus.cc (```gauss_d_tap``` function)
     - A few helper functions are needed
 
 ```

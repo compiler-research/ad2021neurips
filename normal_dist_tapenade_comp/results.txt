@@ -1,0 +1,162 @@
+Result mismatch 0 2.4427e-07 0 -2.4427e-07 0
+Result mismatch 5 -5.94486e-06 0 5.94486e-06 0
+Result mismatch 10 4.40315e-06 0 -4.40315e-06 0
+Result mismatch 15 -2.54253e-06 0 2.54253e-06 0
+Result mismatch 20 2.87156e-06 0 -2.87156e-06 0
+Result mismatch 25 5.07316e-06 0 -5.07316e-06 0
+Result mismatch 30 1.35639e-44 0 -1.35639e-44 0
+Result mismatch 35 4.77878e-06 0 -4.77878e-06 0
+Result mismatch 40 -6.61988e-06 0 6.61988e-06 0
+Result mismatch 45 3.10361e-06 0 -3.10361e-06 0
+Result mismatch 50 -7.174e-07 0 7.174e-07 0
+Result mismatch 55 3.85398e-07 0 -3.85398e-07 0
+Result mismatch 60 -1.18626e-05 0 1.18626e-05 0
+Result mismatch 65 -8.58525e-07 0 8.58525e-07 0
+Result mismatch 70 6.07438e-06 0 -6.07438e-06 0
+Result mismatch 75 7.14175e-07 0 -7.14175e-07 0
+Result mismatch 80 7.21505e-07 0 -7.21505e-07 0
+Result mismatch 85 -7.79554e-50 0 7.79554e-50 0
+Result mismatch 90 1.74837e-06 0 -1.74837e-06 0
+Result mismatch 95 1.10719e-06 0 -1.10719e-06 0
+Memory alloc time 8 microsec
+Clad time 54187 microsec 0.54187 per call to compute
+Tapenade time 18759 microsec 0.18759 per call to compute
+Allocations made 16 MB 
+process 26 MB 
+Result mismatch 0 2.38595e-18 0 -2.38595e-18 0
+Result mismatch 10 3.04933e-08 0 -3.04933e-08 0
+Result mismatch 20 2.38982e-08 0 -2.38982e-08 0
+Result mismatch 30 2.11668e-14 0 -2.11668e-14 0
+Result mismatch 40 -2.8007e-09 0 2.8007e-09 0
+Result mismatch 50 -2.61994e-09 0 2.61994e-09 0
+Result mismatch 60 -8.38087e-09 0 8.38087e-09 0
+Result mismatch 70 3.08821e-08 0 -3.08821e-08 0
+Result mismatch 80 4.17572e-09 0 -4.17572e-09 0
+Result mismatch 90 3.97862e-11 0 -3.97862e-11 0
+Memory alloc time 7 microsec
+Clad time 65715 microsec 0.65715 per call to compute
+Tapenade time 19720 microsec 0.1972 per call to compute
+Allocations made 32 MB 
+process 41 MB 
+Result mismatch 0 4.45842e-14 0 -4.45842e-14 0
+Result mismatch 20 9.07468e-13 0 -9.07468e-13 0
+Result mismatch 40 -6.8558e-16 0 6.8558e-16 0
+Result mismatch 60 -4.46561e-13 0 4.46561e-13 0
+Result mismatch 80 6.74848e-15 0 -6.74848e-15 0
+Memory alloc time 8 microsec
+Clad time 90591 microsec 0.90591 per call to compute
+Tapenade time 21222 microsec 0.21222 per call to compute
+Allocations made 64 MB 
+process 72 MB 
+Result mismatch 0 7.43211e-14 0 -7.43211e-14 0
+Result mismatch 20 9.6006e-44 0 -9.6006e-44 0
+Result mismatch 40 -1.6848e-13 0 1.6848e-13 0
+Result mismatch 60 -1.11726e-19 0 1.11726e-19 0
+Result mismatch 80 4.04752e-15 0 -4.04752e-15 0
+Memory alloc time 6 microsec
+Clad time 9614 microsec 0.9614 per call to compute
+Tapenade time 2087 microsec 0.2087 per call to compute
+Allocations made 6 MB 
+process 15 MB 
+Result mismatch 0 2.59552e-26 0 -2.59552e-26 0
+Result mismatch 40 -1.16951e-21 0 1.16951e-21 0
+Result mismatch 80 2.81019e-22 0 -2.81019e-22 0
+Memory alloc time 5 microsec
+Clad time 17292 microsec 1.7292 per call to compute
+Tapenade time 2531 microsec 0.2531 per call to compute
+Allocations made 12 MB 
+process 22 MB 
+Result mismatch 0 2.81434e-42 0 -2.81434e-42 0
+Result mismatch 80 9.77771e-40 0 -9.77771e-40 0
+Memory alloc time 5 microsec
+Clad time 30077 microsec 3.0077 per call to compute
+Tapenade time 3769 microsec 0.3769 per call to compute
+Allocations made 25 MB 
+process 34 MB 
+Result mismatch 0 3.16909e-254 0 -3.16909e-254 0
+Memory alloc time 7 microsec
+Clad time 54567 microsec 5.4567 per call to compute
+Tapenade time 7221 microsec 0.7221 per call to compute
+Allocations made 51 MB 
+process 59 MB 
+Result mismatch 0 5.44789e-149 0 -5.44789e-149 0
+Memory alloc time 9 microsec
+Clad time 102557 microsec 10.2557 per call to compute
+Tapenade time 12390 microsec 1.239 per call to compute
+Allocations made 102 MB 
+process 109 MB 
+Memory alloc time 11 microsec
+Clad time 245986 microsec 24.5986 per call to compute
+Tapenade time 23184 microsec 2.3184 per call to compute
+Allocations made 204 MB 
+process 209 MB 
+Memory alloc time 10 microsec
+Clad time 371728 microsec 37.1728 per call to compute
+Tapenade time 42621 microsec 4.2621 per call to compute
+Allocations made 409 MB 
+process 409 MB 
+Memory alloc time 10 microsec
+Clad time 786102 microsec 78.6102 per call to compute
+Tapenade time 76846 microsec 7.6846 per call to compute
+Allocations made 755 MB 
+process 747 MB 
+Memory alloc time 12 microsec
+Clad time 1907281 microsec 190.728 per call to compute
+Tapenade time 310481 microsec 31.0481 per call to compute
+Allocations made 1638 MB 
+process 1609 MB 
+Memory alloc time 11 microsec
+Clad time 190560 microsec 190.56 per call to compute
+Tapenade time 15344 microsec 15.344 per call to compute
+Allocations made 163 MB 
+process 169 MB 
+Memory alloc time 11 microsec
+Clad time 409418 microsec 409.418 per call to compute
+Tapenade time 32038 microsec 32.038 per call to compute
+Allocations made 327 MB 
+process 329 MB 
+Memory alloc time 10 microsec
+Clad time 880599 microsec 880.599 per call to compute
+Tapenade time 66702 microsec 66.702 per call to compute
+Allocations made 655 MB 
+process 649 MB 
+Memory alloc time 12 microsec
+Clad time 1815638 microsec 1815.64 per call to compute
+Tapenade time 246764 microsec 246.764 per call to compute
+Allocations made 1310 MB 
+process 1289 MB 
+Memory alloc time 12 microsec
+Clad time 4555374 microsec 4555.37 per call to compute
+Tapenade time 609961 microsec 609.961 per call to compute
+Allocations made 2621 MB 
+process 2569 MB 
+Memory alloc time 13 microsec
+Clad time 373190 microsec 3731.9 per call to compute
+Tapenade time 30440 microsec 304.4 per call to compute
+Allocations made 262 MB 
+process 265 MB 
+Memory alloc time 11 microsec
+Clad time 754532 microsec 7545.32 per call to compute
+Tapenade time 64790 microsec 647.9 per call to compute
+Allocations made 524 MB 
+process 521 MB 
+Memory alloc time 12 microsec
+Clad time 1609283 microsec 16092.8 per call to compute
+Tapenade time 182008 microsec 1820.08 per call to compute
+Allocations made 1048 MB 
+process 1033 MB 
+Memory alloc time 13 microsec
+Clad time 3783840 microsec 37838.4 per call to compute
+Tapenade time 544014 microsec 5440.14 per call to compute
+Allocations made 2097 MB 
+process 2057 MB 
+Memory alloc time 14 microsec
+Clad time 8176199 microsec 81762 per call to compute
+Tapenade time 1036647 microsec 10366.5 per call to compute
+Allocations made 4194 MB 
+process 4105 MB 
+Memory alloc time 15 microsec
+Clad time 16214330 microsec 162143 per call to compute
+Tapenade time 2048111 microsec 20481.1 per call to compute
+Allocations made 8388 MB 
+process 8201 MB 

@@ -204,16 +204,16 @@ int main(int argc, char *argv[]) {
   for ( unsigned int i=0; i<100; i++) 
     if ( i< N*dim )
       if ( (res_check[i]!=result_x[i]) || (res_checky[i]!=result_y[i]) ) {
-	std::cout << i << " " << res_check[i] << " " << result_x[i];
+	std::cout <<"Result mismatch " << i << " " << res_check[i] << " " << result_x[i];
 	std::cout << " " << res_checky[i] << " " << result_y[i] << std::endl;
       }
 
-  std::cout << "Memory alloc time " << duration.count() << std::endl;
-  std::cout << "Clad time " <<duration_clad.count() << std::endl;
-  std::cout << "Tapenade time " << duration_tap.count() << std::endl;
+  std::cout << "Memory alloc time " << duration.count() << " microsec" << std::endl;
+  std::cout << "Clad time " <<duration_clad.count() << " microsec " << (duration_clad.count()/float(N)) << " per call to compute" <<std::endl;
+  std::cout << "Tapenade time " << duration_tap.count() << " microsec " << (duration_tap.count()/float(N)) << " per call to compute" <<std::endl;
   std::cout << "Allocations made " << int((N*dim*sizeof(double)*4 + N*sizeof(double))/1.e6) << " MB "<< std::endl;
   std::cout << "process " << int(getValue()/1000.) << " MB " <<std::endl;
-  std::cout << "Time per N (microsec) " << dim << " " << (duration.count()/float(N)) << std::endl; 
+  //  std::cout << "Time per N (microsec) " << dim << " " << (duration.count()/float(N)) << std::endl; 
 
   //for ( unsigned int i=0; i<N*dim; i++)
   //  std::cout << i << " " << result_x[i] << " " << result_y[i] << std::endl;
