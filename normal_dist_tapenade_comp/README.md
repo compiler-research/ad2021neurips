@@ -23,3 +23,8 @@ clang -DCLAD_NO_NUM_DIFF -x c++ -std=c++11 -O2 -Xclang -add-plugin -Xclang clad 
 ./a.out 1000 5120
 
 (1000 trials with 5120 dimensions of the normal distribution)
+
+  - Run with lots of different options (output in results.txt)
+```
+./runit.job
+```
