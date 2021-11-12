@@ -1,0 +1,156 @@
+[80, 160, 320, 640, 1280, 2560, 5120, 10240, 20480, 40960, 81920, 163840, 327680,  655360, 1310720, 2621440, 5242880]
+
+total:
+[12.576, 14.239999999999998, 16.992, 18.144, 19.68, 23.04, 31.551, 40.992, 73.151, 145.119, 291.038, 591.42, 1691.87, 5180.01, 9808.199999999999, 20624.100000000002, 42663.6]
+
+memcpy:
+[4.544, 4.608, 5.248, 6.048, 7.744, 11.04, 18.88, 27.424, 49.791, 109.50399999999999, 210.91, 424.19, 1353.6, 4502.8, 8460.9, 17931.4, 37256.1]
+
+kernel:
+[8.0320, 9.6320, 11.744, 12.096, 11.936, 12.000, 12.671, 13.568, 23.360, 35.615, 80.128, 167.23, 338.27, 677.21, 1347.3, 2692.7, 5407.5]
+
+DtoH:
+[2.2720, 2.2720, 2.6240, 2.8800, 3.5840, 4.5120, 7.6160, 13.856, 26.431, 53.056, 101.95, 206.21, 848.64, 3326.6, 6068.9, 12967, 27287]
+
+HtoD:
+[2.2720, 2.3360, 2.6240, 3.1680, 4.1600, 6.5280, 11.264, 13.568, 23.360, 56.448, 108.96, 217.98, 504.96, 1176.2, 2392.0, 4964.4, 9969.1]
+
+
+Dimension: 80
+19757 
+19757 Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 63.87%  8.0320us         1  8.0320us  8.0320us  8.0320us  compute(double*, double*, double*, double*, int)
+ 18.07%  2.2720us         2  1.1360us  1.1200us  1.1520us  [CUDA memcpy DtoH]
+ 18.07%  2.2720us         2  1.1360us     992ns  1.2800us  [CUDA memcpy HtoD]
+
+Dimension: 160
+19848 
+19848 Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 67.64%  9.6320us         1  9.6320us  9.6320us  9.6320us  compute(double*, double*, double*, double*, int)
+ 16.40%  2.3360us         2  1.1680us  1.0560us  1.2800us  [CUDA memcpy HtoD]
+ 15.96%  2.2720us         2  1.1360us  1.1200us  1.1520us  [CUDA memcpy DtoH]
+
+
+Dimension: 320
+19943 
+19943 Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 69.11%  11.744us         1  11.744us  11.744us  11.744us  compute(double*, double*, double*, double*, int)
+ 15.44%  2.6240us         2  1.3120us  1.2160us  1.4080us  [CUDA memcpy DtoH]
+ 15.44%  2.6240us         2  1.3120us  1.2160us  1.4080us  [CUDA memcpy HtoD]
+
+ Dimension: 640
+20027 
+20027 Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 66.67%  12.096us         1  12.096us  12.096us  12.096us  compute(double*, double*, double*, double*, int)
+ 17.46%  3.1680us         2  1.5840us  1.5040us  1.6640us  [CUDA memcpy HtoD]
+ 15.87%  2.8800us         2  1.4400us  1.3120us  1.5680us  [CUDA memcpy DtoH]
+
+ Dimension: 1280
+==20183== Profiling application: ./cladcudasched
+==20183== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 60.65%  11.936us         1  11.936us  11.936us  11.936us  compute(double*, double*, double*, double*, int)
+ 21.14%  4.1600us         2  2.0800us  2.0800us  2.0800us  [CUDA memcpy HtoD]
+ 18.21%  3.5840us         2  1.7920us  1.7920us  1.7920us  [CUDA memcpy DtoH]
+
+ Dimension: 2560
+==20242== Profiling application: ./cladcudasched
+==20242== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 52.08%  12.000us         1  12.000us  12.000us  12.000us  compute(double*, double*, double*, double*, int)
+ 28.33%  6.5280us         2  3.2640us  3.2640us  3.2640us  [CUDA memcpy HtoD]
+ 19.58%  4.5120us         2  2.2560us  2.1120us  2.4000us  [CUDA memcpy DtoH]
+
+ Dimension: 5120
+==20658== Profiling application: ./cladcudasched
+==20658== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 40.16%  12.671us         1  12.671us  12.671us  12.671us  compute(double*, double*, double*, double*, int)
+ 35.70%  11.264us         2  5.6320us  5.6320us  5.6320us  [CUDA memcpy HtoD]
+ 24.14%  7.6160us         2  3.8080us  3.7120us  3.9040us  [CUDA memcpy DtoH]
+
+ Dimension: 10240
+==20877== Profiling application: ./cladcudasched
+==20877== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 38.35%  17.056us         2  8.5280us  8.2880us  8.7680us  [CUDA memcpy HtoD]
+ 31.15%  13.856us         2  6.9280us  6.7840us  7.0720us  [CUDA memcpy DtoH]
+ 30.50%  13.568us         1  13.568us  13.568us  13.568us  compute(double*, double*, double*, double*, int)
+
+ Dimension: 20480
+==21082== Profiling application: ./cladcudasched
+==21082== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.63%  30.047us         2  15.023us  14.816us  15.231us  [CUDA memcpy HtoD]
+ 33.11%  26.431us         2  13.215us  13.023us  13.408us  [CUDA memcpy DtoH]
+ 29.26%  23.360us         1  23.360us  23.360us  23.360us  compute(double*, double*, double*, double*, int)
+
+Dimension: 40960
+==21267== Profiling application: ./cladcudasched
+==21267== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 38.90%  56.448us         2  28.224us  27.904us  28.544us  [CUDA memcpy HtoD]
+ 36.56%  53.056us         2  26.528us  25.856us  27.200us  [CUDA memcpy DtoH]
+ 24.54%  35.615us         1  35.615us  35.615us  35.615us  compute(double*, double*, double*, double*, int)
+
+ Dimension: 81920
+==21454== Profiling application: ./cladcudasched
+==21454== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 37.44%  108.96us         2  54.480us  54.240us  54.720us  [CUDA memcpy HtoD]
+ 35.03%  101.95us         2  50.975us  50.560us  51.391us  [CUDA memcpy DtoH]
+ 27.53%  80.128us         1  80.128us  80.128us  80.128us  compute(double*, double*, double*, double*, int)
+
+
+Dimension: 163840
+==21641== Profiling application: ./cladcudasched
+==21641== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 36.86%  217.98us         2  108.99us  108.80us  109.18us  [CUDA memcpy HtoD]
+ 34.87%  206.21us         2  103.10us  102.88us  103.33us  [CUDA memcpy DtoH]
+ 28.28%  167.23us         1  167.23us  167.23us  167.23us  compute(double*, double*, double*, double*, int)
+
+Dimension: 327680
+==21746== Profiling application: ./cladcudasched
+==21746== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 50.16%  848.64us         2  424.32us  255.55us  593.09us  [CUDA memcpy DtoH]
+ 29.85%  504.96us         2  252.48us  251.87us  253.09us  [CUDA memcpy HtoD]
+ 19.99%  338.27us         1  338.27us  338.27us  338.27us  compute(double*, double*, double*, double*, int)
+
+Dimension: 655360
+==22143== Profiling application: ./cladcudasched
+==22143== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 64.22%  3.3266ms         2  1.6633ms  1.4772ms  1.8494ms  [CUDA memcpy DtoH]
+ 22.71%  1.1762ms         2  588.08us  571.36us  604.80us  [CUDA memcpy HtoD]
+ 13.07%  677.21us         1  677.21us  677.21us  677.21us  compute(double*, double*, double*, double*, int)
+
+ Dimension: 1310720
+==21873== Profiling application: ./cladcudasched
+==21873== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 61.88%  6.0689ms         2  3.0345ms  3.0073ms  3.0616ms  [CUDA memcpy DtoH]
+ 24.39%  2.3920ms         2  1.1960ms  1.1898ms  1.2022ms  [CUDA memcpy HtoD]
+ 13.74%  1.3473ms         1  1.3473ms  1.3473ms  1.3473ms  compute(double*, double*, double*, double*, int)
+
+ Dimension: 2621440
+==22324== Profiling application: ./cladcudasched
+==22324== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 62.87%  12.967ms         2  6.4833ms  6.4528ms  6.5138ms  [CUDA memcpy DtoH]
+ 24.07%  4.9644ms         2  2.4822ms  2.4702ms  2.4943ms  [CUDA memcpy HtoD]
+ 13.06%  2.6927ms         1  2.6927ms  2.6927ms  2.6927ms  compute(double*, double*, double*, double*, int)
+
+
+Dimension: 5242880
+==22478== Profiling application: ./cladcudasched
+==22478== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 63.96%  27.287ms         2  13.644ms  13.499ms  13.788ms  [CUDA memcpy DtoH]
+ 23.37%  9.9691ms         2  4.9846ms  4.9494ms  5.0197ms  [CUDA memcpy HtoD]
+ 12.67%  5.4075ms         1  5.4075ms  5.4075ms  5.4075ms  compute(double*, double*, double*, double*, int)
