@@ -3,7 +3,7 @@
 
   - Setup Tapenade
     - Make the ad function for our gaussian function (details to be added). I have added the result to ngaus.cc (```gauss_d_tap``` function)
-    - A few helper functions are needed
+    - A few helper functions are needed (or get them here: https://github.com/microsoft/ADBench/tree/master/src/cpp/modules/tapenade/utils)
 
 ```
 cd tap/tapenade_3.16/ADFirstAidKit
